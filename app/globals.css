@@ -1,0 +1,105 @@
+@import "tailwindcss";
+@import "../styles/tokens/colors.css";
+@import "../styles/tokens/typography.css";
+
+@theme {
+  /* Surfaces */
+  --color-background: var(--surface-page);
+  --color-surfaceContainer: var(--surface-card);
+  --color-darkText: var(--text-primary);
+
+  /* Primary (brand amber) */
+  --color-realPrimary: var(--brand-primary); /* strong amber — CTAs */
+  --color-onRealPrimary: var(--text-on-brand); /* dark text on strong amber */
+  --color-primary: var(--brand-primary-tint); /* soft amber container */
+  --color-onPrimary: var(
+    --brand-primary-active
+  ); /* dark amber text on that container */
+
+  /* Secondary (near-black) */
+  --color-realSecondary: var(--brand-secondary); /* near-black */
+  --color-onRealSecondary: var(--text-on-inverse); /* near-white text on it */
+  --color-secondary: var(--brand-secondary-tint); /* soft gray container */
+  --color-onSecondary: var(--text-primary); /* dark text on that container */
+
+  /* Outline / border */
+  --color-outline: var(--border-default);
+  --color-outlineStrong: var(--border-strong);
+  --color-outlineFocus: var(--border-focus);
+
+  /* Error */
+  --color-error: var(--error-solid-bg); /* see note below */
+  --color-onError: var(--text-on-error); /* see note below */
+
+  /* Status (new — not in your old scheme, named to match its convention) */
+  --color-paid: var(--status-paid-bg);
+  --color-onPaid: var(--status-paid-fg);
+  --color-pending: var(--status-pending-bg);
+  --color-onPending: var(--status-pending-fg);
+  --color-overdue: var(--status-overdue-bg);
+  --color-onOverdue: var(--status-overdue-fg);
+
+  /* Secondary text roles */
+  --color-textSecondary: var(--text-secondary);
+  --color-textTertiary: var(--text-tertiary);
+  --color-link: var(--text-link);
+  --color-linkHover: var(--text-link-hover);
+
+  /* Fonts */
+  --font-manrope: var(--font-sans); /* already Manrope under the hood */
+  --font-serif: var(--font-serif);
+  /* Fonts (from typography.css) */
+  /*
+  --font-sans: var(--font-sans);
+
+  --color-background: #fff8fb;
+  --color-surfaceContainer: #ffffff;
+
+  --color-darkText: #33262e;
+
+  --color-realPrimary: #d81b60;
+  --color-onRealPrimary: #ffffff;
+
+  --color-primary: #ffd8e8;
+  --color-onPrimary: #7c1844;
+
+  --color-realSecondary: #8b5a70;
+  --color-onRealSecondary: #ffffff;
+
+  --color-secondary: #f8eaf0;
+  --color-onSecondary: #654454;
+
+  --color-tertiary: #9b6df5;
+  --color-onTertiary: #ffffff;
+
+  --color-tertiaryContainer: #efe6ff;
+  --color-onTertiaryContainer: #5b34a3;
+
+  --color-outline: #e2d6dd;
+
+  */
+
+  --color-error: #dc2626;
+  --color-onError: #ffffff;
+  --font-inter: "Inter", sans-serif;
+  --font-manrope: "Manrope", serif;
+}
+body {
+  color: var(--color-darkText);
+  padding-bottom: 48px;
+}
+::selection {
+  background-color: var(--color-realPrimary);
+  color: var(--color-onRealPrimary);
+}
+
+.invoiceForm input,
+.invoiceForm select,
+.invoiceForm textarea {
+  padding: 12px 24px;
+  font-size: 18px;
+  color: var(--color-onTertiaryContainer);
+}
+.heading {
+  font-family: "Neuton", "Arial";
+}

@@ -1,0 +1,86 @@
+:root{
+  /* ---- Base palette ---- */
+  /* Neutrals — cool, near-black to white, sampled from solira.uk */
+  --gray-0: #ffffff;
+  --gray-50: #f9fafb;
+  --gray-100: #ededed;
+  --gray-200: #e0e0e0;
+  --gray-300: #cbcbcb;
+  --gray-400: #9a9a9a;
+  --gray-500: #767676;
+  --gray-600: #5c5c5c;
+  --gray-700: #3d3d3d;
+  --gray-800: #262626;
+  --gray-900: #171717;
+
+  /* Brand amber — the solira.uk CTA color */
+  --amber-100: #fff1d8;
+  --amber-300: #ffce7a;
+  --amber-500: #ffb22c;
+  --amber-600: #e89815;
+  --amber-700: #a15b00;
+
+  /* Semantic hues */
+  --green-100: #e3f6ec;
+  --green-600: #1a7a45;
+  --green-700: #14602f;
+
+  --red-100: #fdecec;
+  --red-600: #b3261e;
+  --red-700: #8f1d17;
+
+  --crimson-100: #fdecec;
+  --crimson-600: #dc2626;
+  --crimson-700: #b91c1c;
+
+  /* ---- Semantic aliases ---- */
+  /* Surfaces */
+  --surface-page: var(--gray-50);
+  --surface-card: var(--gray-0);
+  --surface-sunken: var(--gray-100);
+  --surface-inverse: var(--gray-900);
+  --surface-overlay: rgba(23,23,23,0.5);
+
+  /* Text */
+  --text-primary: var(--gray-900);
+  --text-secondary: var(--gray-600);
+  --text-tertiary: var(--gray-400);
+  --text-on-inverse: var(--gray-50);
+  --text-on-brand: var(--gray-900);
+  --text-link: var(--amber-700);
+  --text-link-hover: var(--gray-900);
+
+  /* Borders */
+  --border-default: var(--gray-200);
+  --border-strong: var(--gray-300);
+  --border-focus: var(--gray-900);
+
+  /* Brand / primary action */
+  --brand-primary: var(--amber-500);
+  --brand-primary-hover: var(--amber-600);
+  --brand-primary-active: var(--amber-700);
+  --brand-primary-tint: var(--amber-100);
+
+  /* Secondary action = inverse near-black */
+  --brand-secondary: var(--gray-900);
+  --brand-secondary-hover: var(--gray-800);
+  --brand-secondary-tint: var(--gray-100);
+
+  /* Status: invoice lifecycle */
+  --status-paid-fg: var(--green-700);
+  --status-paid-bg: var(--green-100);
+  --status-paid-dot: var(--green-600);
+
+  --status-pending-fg: var(--amber-700);
+  --status-pending-bg: var(--amber-100);
+  --status-pending-dot: var(--amber-500);
+
+  --status-overdue-fg: var(--red-700);
+  --status-overdue-bg: var(--red-100);
+  --status-overdue-dot: var(--red-600);
+
+  /* Errors / destructive actions (form validation, delete) */
+  --error-fg: var(--crimson-700);
+  --error-bg: var(--crimson-100);
+  --error-border: var(--crimson-600);
+}

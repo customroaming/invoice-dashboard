@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../../public/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../../public/fonts/PlayfairDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../../public/fonts/PlayfairDisplay-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../../public/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../../public/fonts/PlayfairDisplay-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+:root {
+  /* Font families */
+  --font-serif: "Playfair Display", Georgia, serif;
+
+  /* Type scale — sizes are 8px-grid steps (4px half-step at the small end) */
+  --text-size-caption: 12px;
+  --text-size-body: 16px;
+  --text-size-subhead: 24px;
+  --text-size-h3: 32px;
+  --text-size-h2: 48px;
+  --text-size-h1: 64px;
+  --text-size-display: 96px;
+
+  --text-lh-caption: 16px;
+  --text-lh-body: 24px;
+  --text-lh-subhead: 32px;
+  --text-lh-h3: 40px;
+  --text-lh-h2: 56px;
+  --text-lh-h1: 72px;
+  --text-lh-display: 104px;
+
+  --text-weight-regular: 400;
+  --text-weight-medium: 500;
+  --text-weight-semibold: 600;
+  --text-weight-bold: 700;
+  --text-weight-extrabold: 800;
+
+  /* Semantic type roles */
+  --text-display-font: var(--font-serif);
+  --text-display-weight: var(--text-weight-semibold);
+
+  --text-h1-font: var(--font-serif);
+  --text-h1-weight: var(--text-weight-semibold);
+
+  --text-h2-font: var(--font-serif);
+  --text-h2-weight: var(--text-weight-medium);
+
+  --text-h3-font: var(--font-sans);
+  --text-h3-weight: var(--text-weight-bold);
+
+  --text-subhead-font: var(--font-sans);
+  --text-subhead-weight: var(--text-weight-semibold);
+
+  --text-body-font: var(--font-sans);
+  --text-body-weight: var(--text-weight-regular);
+
+  --text-body-strong-weight: var(--text-weight-semibold);
+
+  --text-caption-font: var(--font-sans);
+  --text-caption-weight: var(--text-weight-semibold);
+  --text-caption-tracking: 0.04em;
+}
