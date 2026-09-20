@@ -52,7 +52,7 @@ export default function RecentTransactions({
               <div className="flex opacity-75 flex-row font-manrope text-textTertiary gap-2">
                 <span>{formattedDate}</span>
                 <span>•</span>
-                <p>{transaction.merchant?.name ?? "No Merchant"}</p>
+                <p>{transaction.merchantName ?? "No Merchant"}</p>
                 <span>•</span>
                 <p>
                   {transaction.notes === "" ? "No Note" : transaction.notes}

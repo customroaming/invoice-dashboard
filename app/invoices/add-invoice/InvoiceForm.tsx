@@ -190,7 +190,7 @@ export default function InvoiceForm({
                   onChange={(e) => {
                     updateLineItem(index, "type", e.target.value);
                     if (e.target.value !== "work") {
-                      updateLineItem(index, "quantity", 1);
+                      updateLineItem(index, "quantity", "1");
                     }
                   }}
                 >
