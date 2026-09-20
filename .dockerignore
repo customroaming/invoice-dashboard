@@ -1,0 +1,8 @@
+node_modules
+.next
+db/finance.db
+.env.local
+.env*.local
+.git
+.gitignore
+README.md
